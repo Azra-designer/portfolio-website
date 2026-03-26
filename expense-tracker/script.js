@@ -25,10 +25,10 @@ addBtn.addEventListener('click', function () {
     const category = inpCategory.value
 
     // Validation
-    if (!name)                        return showError('Transaction name likhao!')
-    if (isNaN(amount) || amount <= 0) return showError('Valid amount daalo!')
-    if (!type)                        return showError('Type select karo!')
-    if (!category)                    return showError('Category select karo!')
+    if (!name)                        return showError('Please enter transaction name!')
+    if (isNaN(amount) || amount <= 0) return showError('Please Enetr a valid amount!')
+    if (!type)                        return showError('Please Select type!')
+    if (!category)                    return showError('Please Select category!')
 
     clearError()
 
